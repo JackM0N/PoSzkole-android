@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEvent">
+
+    <EditText
+        android:id="@+id/editTextImie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Imię"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextPrzedmiot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Przedmiot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextImie"
+        android:layout_margin="16dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextGodzinaOd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Godzina Od"
+        android:focusable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPrzedmiot"
+        android:layout_margin="16dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextGodzinaDo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Godzina Do"
+        android:focusable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextGodzinaOd"
+        android:layout_margin="16dp"
+        />
+
+    <Button
+        android:id="@+id/buttonZapisz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapisz"
+        app:layout_constraintTop_toBottomOf="@id/editTextGodzinaDo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

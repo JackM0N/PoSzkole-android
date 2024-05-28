@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "218774557115",
+    "firebase_url": "https://prup-project-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "prup-project",
+    "storage_bucket": "prup-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218774557115:android:2072b1d27ff233869c749e",
+        "android_client_info": {
+          "package_name": "pl.kalisz.uk.prup.poszkole"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSPaZ7MUejaHRbcdPS98gXiQvkRlsl17Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
