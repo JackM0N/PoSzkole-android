@@ -39,13 +39,18 @@ public class EventAdapter extends ArrayAdapter<Event> {
         TextView textViewPrzedmiot = convertView.findViewById(R.id.textViewPrzedmiot);
         TextView textViewGodzinaOd = convertView.findViewById(R.id.textViewGodzinaOd);
         TextView textViewGodzinaDo = convertView.findViewById(R.id.textViewGodzinaDo);
+        TextView textViewStatus = convertView.findViewById(R.id.textViewStatus);
 
         if (event != null) {
             textViewImie.setText(event.getName());
             textViewPrzedmiot.setText(event.getSubject());
             textViewGodzinaOd.setText(event.getFrom());
             textViewGodzinaDo.setText(event.getTo());
-            Log.d("EventAdapter", "Event: " + event.getName() + ", " + event.getSubject() + ", " + event.getFrom() + ", " + event.getTo());
+            if (event.isCancelled()) {
+                textViewStatus.setText("Odwołane!");
+            } else {
+                textViewStatus.setText("");
+            }
 
             convertView.setOnClickListener(new View.OnClickListener() {
                 @Override

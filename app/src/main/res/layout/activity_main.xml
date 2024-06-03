@@ -39,7 +39,7 @@
         android:layout_marginBottom="16dp"
         android:contentDescription="@string/app_name"
         android:src="@android:drawable/ic_input_add"
-        app:backgroundTint="#88f30b"
+        app:backgroundTint="#2962ff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

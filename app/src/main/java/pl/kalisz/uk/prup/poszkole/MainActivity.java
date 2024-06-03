@@ -27,6 +27,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -129,7 +130,6 @@ public class MainActivity extends AppCompatActivity {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Event event = snapshot.getValue(Event.class);
                     if (event != null) {
-                        Log.d("MainActivity", "Event: " + event.getName() + ", " + event.getSubject() + ", " + event.getFrom() + ", " + event.getTo());
                         eventList.add(event);
                         eventIdList.add(snapshot.getKey());
                     } else {
